@@ -1,0 +1,169 @@
+h1 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 100;
+	margin: 0;
+	text-align: center;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+}
+
+.rocket {
+	max-width: 350px;
+	border: 10px solid white;
+	border-radius: 20px;
+}
+
+.item1 {
+	grid-column: 4/span 3;
+	grid-row: 1/span 3;
+	padding: 10px;
+}
+
+.item2 {
+	grid-column: 1/span 3;
+	grid-row: 1/span 3;
+	padding: 10px;
+}
+
+.item3 {
+	grid-column: 4/span 3;
+	grid-row: 2/span 3;
+	padding-left: 20px;
+	text-align: center;
+}
+
+.b1 {
+	width: 150px;
+	background-color: #dc4767;
+	border: none;
+	color: white;
+	padding: 15px 30px;
+	font-size: 16px;
+	border-radius: 10px;
+}
+
+.container1 {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	column-gap: 20px;
+	width: 50%;
+	margin: auto;
+	padding: 40px;
+}
+
+@media only screen and (max-width: 1400px) {
+	h1 {
+		font-size: 56px;
+		float: left;
+	}
+	.container1 {
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+h2 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: capitalize;
+	font-size: 24px;
+	padding: 30px 0 15px 0;
+	text-align: center;
+	margin: auto;
+}
+
+.avatar {
+	width: 100%;
+	border-radius: 100%
+}
+
+.acontainer {
+	min-width: 85px;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 10px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+	padding: 10px 10% 10px 10%;
+}
+
+.licontainer {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	padding: 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	.container2 {
+		display: grid;
+		grid-template-columns: 1fr;
+		padding: 10px 5% 10px 5%;
+	}
+}
+
+.text {
+	padding: 25px;
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+	background-color: #3a144b;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+
+ul li p {
+	font-size: 14px;
+}
+
+.subtitle {
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.date {
+	text-align: right;
+}
+
+.b2 {
+	width: 150px;
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 15px 30px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+
+.bcontainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
